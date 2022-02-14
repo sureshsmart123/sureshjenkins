@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                echo "welcome step"
+                sh 'git --version'
             }
         }
         stage('Test') {
